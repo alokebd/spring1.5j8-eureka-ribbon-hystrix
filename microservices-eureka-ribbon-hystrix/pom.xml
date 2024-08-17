@@ -1,0 +1,28 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.ait</groupId>
+	<artifactId>microservices-eureka-ribbon-hystrix</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<parent>
+		<groupId>org.springframework.cloud</groupId>
+		<artifactId>spring-cloud-starter-parent</artifactId>
+		<version>Dalston.RELEASE</version> 
+		<!--<version>2021.0.8</version>-->
+	</parent>
+
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<modules>
+		<module>cb-discovery-service</module>
+		<module>cb-account-service</module>
+		<module>cb-gateway-service</module>
+		<module>cb-customer-service</module>
+		<module>cb-zipkin-service</module>
+	</modules>
+
+</project>
